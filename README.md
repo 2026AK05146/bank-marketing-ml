@@ -65,7 +65,7 @@ more useful for comparing the models.
 | KNN | Weakest of the balanced models: lowest recall (0.33), lowest F1 (0.4336) and AUC of only 0.85. Distances get diluted by the many one-hot columns. |
 | Naive Bayes | Lowest accuracy (0.8548), precision (0.4059), AUC and MCC, but highest recall (0.5198). It flags many more clients as "yes", which catches more buyers but also gives many false positives. The independence assumption does not hold for one-hot features. |
 | Support Vector Machine | Highest accuracy (0.9049), precision (0.6875) and MCC (0.4420), and AUC (0.9036) is almost the same as LR. Recall is low (0.34) like LR. |
-| **Overall, winner for your dataset?** | SVM is the best overall on accuracy, precision and MCC, with LR close behind on AUC. If the bank cares more about catching subscribers, Decision Tree (F1) or Naive Bayes (recall) fit better. All models have low recall because of the class imbalance. |
+| **Best for this dataset** | SVM is the best overall on accuracy, precision and MCC, with LR close behind on AUC. If the bank cares more about catching subscribers, Decision Tree (F1) or Naive Bayes (recall) fit better. All models have low recall because of the class imbalance. |
 
 ### Notes on the data
 
